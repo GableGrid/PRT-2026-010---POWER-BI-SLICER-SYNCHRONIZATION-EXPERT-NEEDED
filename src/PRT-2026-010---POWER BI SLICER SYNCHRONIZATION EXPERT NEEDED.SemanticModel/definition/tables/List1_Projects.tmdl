@@ -1,0 +1,99 @@
+table List1_Projects
+	lineageTag: 8fea18f5-fe6a-454e-abfd-7f7a89e182e0
+
+	column ProjectID
+		dataType: string
+		lineageTag: ff7eeeb5-25a2-4eaf-bb01-cd71b2841a71
+		summarizeBy: none
+		sourceColumn: ProjectID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Project Name'
+		dataType: string
+		lineageTag: ee009fd4-3f6e-4f59-a678-deacc72e2a20
+		summarizeBy: none
+		sourceColumn: Project Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Department
+		dataType: string
+		lineageTag: d4b425df-d952-4b09-9037-c6fc3847cebc
+		summarizeBy: none
+		sourceColumn: Department
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: 06b3e39f-fe22-40ad-b022-102bb737eb3b
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Start Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 90dbd351-560a-4a9d-92f7-0771d70ffc1e
+		summarizeBy: none
+		sourceColumn: Start Date
+
+		variation Variation
+			isDefault
+			relationship: 9df89d17-f751-4a27-abc3-b4416cc901b2
+			defaultHierarchy: LocalDateTable_6b94e53e-a0e3-4a48-bb3b-0c6d9c6f3089.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'End Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 9fcf1670-36d7-4212-b447-ce72039ed4a0
+		summarizeBy: none
+		sourceColumn: End Date
+
+		variation Variation
+			isDefault
+			relationship: 7360d443-eaf6-4d8a-a529-13e9bfd2a387
+			defaultHierarchy: LocalDateTable_5e9f11c4-7dcf-46ba-9e93-316a3ee5c2bd.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Budget (£)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3b6887fc-ad86-49f3-ad21-478a2c494df2
+		summarizeBy: sum
+		sourceColumn: Budget (£)
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: c5bdeca5-72ba-40bc-804a-014f18411b25
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	partition List1_Projects = m
+		mode: import
+		source =
+				let
+				    Source = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/1Mk4F57JK_T5kx77DyNavNCSUQo-bEUhQPYIgennTfEM/edit?gid=824653549#gid=824653549"),
+				    List1_Projects_Table = Source{[name="List1_Projects",ItemKind="Table"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(List1_Projects_Table, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"ProjectID", type text}, {"Project Name", type text}, {"Department", type text}, {"Status", type text}, {"Start Date", type date}, {"End Date", type date}, {"Budget (£)", Int64.Type}, {"Region", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

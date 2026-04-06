@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "PRT-2026-010---POWER BI SLICER SYNCHRONIZATION EXPERT NEEDED"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "35f8ad5d-109f-4e66-9676-984c35878e7e"
+  }
+}

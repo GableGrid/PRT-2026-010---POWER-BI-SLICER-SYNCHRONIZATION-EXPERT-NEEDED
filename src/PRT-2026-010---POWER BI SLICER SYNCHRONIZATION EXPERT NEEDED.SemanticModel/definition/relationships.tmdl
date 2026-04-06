@@ -1,0 +1,33 @@
+relationship 9df89d17-f751-4a27-abc3-b4416cc901b2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: List1_Projects.'Start Date'
+	toColumn: LocalDateTable_6b94e53e-a0e3-4a48-bb3b-0c6d9c6f3089.Date
+
+relationship 7360d443-eaf6-4d8a-a529-13e9bfd2a387
+	joinOnDateBehavior: datePartOnly
+	fromColumn: List1_Projects.'End Date'
+	toColumn: LocalDateTable_5e9f11c4-7dcf-46ba-9e93-316a3ee5c2bd.Date
+
+relationship d8cd0ad5-de12-4a17-a537-85dd26181275
+	joinOnDateBehavior: datePartOnly
+	fromColumn: List2_Tasks.'Due Date'
+	toColumn: LocalDateTable_40ded1b9-a5fb-49a4-96ea-59476eb55258.Date
+
+relationship 615488b7-c641-4e0b-8370-eb96f17a3a53
+	joinOnDateBehavior: datePartOnly
+	fromColumn: List3_Issues.'Date Reported'
+	toColumn: LocalDateTable_69c387dc-2997-4581-8d93-54ab7b29256b.Date
+
+relationship fdc8e03a-8f66-40ce-89d0-a9323c8c5588
+	joinOnDateBehavior: datePartOnly
+	fromColumn: List3_Issues.'Resolution Date'
+	toColumn: LocalDateTable_91252769-3b41-407b-96b6-9462aaa68136.Date
+
+relationship AutoDetected_ff1070da-192d-4ce4-a10e-429499838950
+	fromColumn: List2_Tasks.ProjectID
+	toColumn: List1_Projects.ProjectID
+
+relationship AutoDetected_fe81b4b2-b54a-4584-afe6-24b3ec6dcc77
+	fromColumn: List3_Issues.ProjectID
+	toColumn: List1_Projects.ProjectID
+

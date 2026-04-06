@@ -1,0 +1,26 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["List1_Projects","List2_Tasks","List3_Issues"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table List1_Projects
+ref table DateTableTemplate_c9192fc3-1473-4d4a-bb76-3bb1a83ff9e2
+ref table LocalDateTable_6b94e53e-a0e3-4a48-bb3b-0c6d9c6f3089
+ref table LocalDateTable_5e9f11c4-7dcf-46ba-9e93-316a3ee5c2bd
+ref table List2_Tasks
+ref table LocalDateTable_40ded1b9-a5fb-49a4-96ea-59476eb55258
+ref table List3_Issues
+ref table LocalDateTable_69c387dc-2997-4581-8d93-54ab7b29256b
+ref table LocalDateTable_91252769-3b41-407b-96b6-9462aaa68136
+
+ref cultureInfo en-US
+

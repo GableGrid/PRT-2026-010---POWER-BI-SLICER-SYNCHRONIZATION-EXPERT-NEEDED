@@ -1,0 +1,98 @@
+table List3_Issues
+	lineageTag: 8317a07f-1cf0-40b1-a3ee-2c2240078d5f
+
+	column IssueID
+		dataType: string
+		lineageTag: 5d287c51-c910-4ab4-8405-37784253f0b4
+		summarizeBy: none
+		sourceColumn: IssueID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProjectID
+		dataType: string
+		lineageTag: 6d9377b6-d1bd-4ab7-8702-d4ec5ae054e5
+		summarizeBy: none
+		sourceColumn: ProjectID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Issue Title'
+		dataType: string
+		lineageTag: db6db0e5-486c-4543-992d-a4ace965e0de
+		summarizeBy: none
+		sourceColumn: Issue Title
+
+		annotation SummarizationSetBy = Automatic
+
+	column Severity
+		dataType: string
+		lineageTag: 5463ab30-1996-4930-b5b0-7a66a5974c99
+		summarizeBy: none
+		sourceColumn: Severity
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reported By'
+		dataType: string
+		lineageTag: 99c7e8b9-1661-49ab-acaa-0b251e71cc37
+		summarizeBy: none
+		sourceColumn: Reported By
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date Reported'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 6ba92a3c-8a15-4454-823b-2582b6b96169
+		summarizeBy: none
+		sourceColumn: Date Reported
+
+		variation Variation
+			isDefault
+			relationship: 615488b7-c641-4e0b-8370-eb96f17a3a53
+			defaultHierarchy: LocalDateTable_69c387dc-2997-4581-8d93-54ab7b29256b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Resolved
+		dataType: string
+		lineageTag: c72abebc-3571-42e3-ada6-8520090afb48
+		summarizeBy: none
+		sourceColumn: Resolved
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Resolution Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a31f1967-b834-4b15-a85e-d33352718832
+		summarizeBy: none
+		sourceColumn: Resolution Date
+
+		variation Variation
+			isDefault
+			relationship: fdc8e03a-8f66-40ce-89d0-a9323c8c5588
+			defaultHierarchy: LocalDateTable_91252769-3b41-407b-96b6-9462aaa68136.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition List3_Issues = m
+		mode: import
+		source =
+				let
+				    Source = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/1Mk4F57JK_T5kx77DyNavNCSUQo-bEUhQPYIgennTfEM/edit?gid=824653549#gid=824653549"),
+				    List3_Issues_Table = Source{[name="List3_Issues",ItemKind="Table"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(List3_Issues_Table, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"IssueID", type text}, {"ProjectID", type text}, {"Issue Title", type text}, {"Severity", type text}, {"Reported By", type text}, {"Date Reported", type date}, {"Resolved", type text}, {"Resolution Date", type date}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,91 @@
+table List2_Tasks
+	lineageTag: 5955e0c9-0f01-4c6d-b5b1-eb3350bd8d60
+
+	column TaskID
+		dataType: string
+		lineageTag: b98c6012-a175-4157-b171-975e13a88689
+		summarizeBy: none
+		sourceColumn: TaskID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProjectID
+		dataType: string
+		lineageTag: 872e837e-1773-4b2a-8e42-8854c050deda
+		summarizeBy: none
+		sourceColumn: ProjectID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Task Name'
+		dataType: string
+		lineageTag: 3fb17031-2235-43c0-9281-a14eb98394ac
+		summarizeBy: none
+		sourceColumn: Task Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Assigned To'
+		dataType: string
+		lineageTag: 11a5f5cd-1752-4297-a28c-1ddaeeb81246
+		summarizeBy: none
+		sourceColumn: Assigned To
+
+		annotation SummarizationSetBy = Automatic
+
+	column Priority
+		dataType: string
+		lineageTag: 7fad889c-ea9f-49f9-ad90-94f60e4c4325
+		summarizeBy: none
+		sourceColumn: Priority
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: 311c051e-ea7f-46df-b21d-087e7022c67f
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Due Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e5bba5a1-a83f-4876-87fd-52618a8689f8
+		summarizeBy: none
+		sourceColumn: Due Date
+
+		variation Variation
+			isDefault
+			relationship: d8cd0ad5-de12-4a17-a537-85dd26181275
+			defaultHierarchy: LocalDateTable_40ded1b9-a5fb-49a4-96ea-59476eb55258.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Hours Logged'
+		dataType: int64
+		formatString: 0
+		lineageTag: d6b82e0c-6e12-4c78-8945-314c1be95c03
+		summarizeBy: sum
+		sourceColumn: Hours Logged
+
+		annotation SummarizationSetBy = Automatic
+
+	partition List2_Tasks = m
+		mode: import
+		source =
+				let
+				    Source = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/1Mk4F57JK_T5kx77DyNavNCSUQo-bEUhQPYIgennTfEM/edit?gid=824653549#gid=824653549"),
+				    List2_Tasks_Table = Source{[name="List2_Tasks",ItemKind="Table"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(List2_Tasks_Table, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"TaskID", type text}, {"ProjectID", type text}, {"Task Name", type text}, {"Assigned To", type text}, {"Priority", type text}, {"Status", type text}, {"Due Date", type date}, {"Hours Logged", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
