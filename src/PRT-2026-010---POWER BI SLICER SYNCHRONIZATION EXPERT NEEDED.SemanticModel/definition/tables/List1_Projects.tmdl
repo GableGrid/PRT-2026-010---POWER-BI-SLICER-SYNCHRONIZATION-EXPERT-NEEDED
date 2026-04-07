@@ -1,6 +1,32 @@
 table List1_Projects
 	lineageTag: 8fea18f5-fe6a-454e-abfd-7f7a89e182e0
 
+	measure 'Total Projects' = COUNTROWS(List1_Projects)
+		formatString: 0
+		lineageTag: c28d8bbb-3e08-4006-81c8-00616c261d42
+
+	measure 'Active Projects' =
+			
+			CALCULATE(
+			    COUNTROWS(List1_Projects),
+			    List1_Projects[Status] = "Active"
+			)
+		formatString: 0
+		lineageTag: 29ba3bfb-30ca-4163-a558-c7772d553d3a
+
+	measure 'Total Tasks' = COUNTROWS(List2_Tasks)
+		formatString: 0
+		lineageTag: 98c56865-1a03-465b-b602-2eb9e2048d63
+
+	measure 'Open Issues' =
+			
+			CALCULATE(
+			    COUNTROWS(List3_Issues),
+			    List3_Issues[Resolved] = "No"
+			)
+		formatString: 0
+		lineageTag: c456b08c-e769-4045-9e85-3c11b7259e44
+
 	column ProjectID
 		dataType: string
 		lineageTag: ff7eeeb5-25a2-4eaf-bb01-cd71b2841a71

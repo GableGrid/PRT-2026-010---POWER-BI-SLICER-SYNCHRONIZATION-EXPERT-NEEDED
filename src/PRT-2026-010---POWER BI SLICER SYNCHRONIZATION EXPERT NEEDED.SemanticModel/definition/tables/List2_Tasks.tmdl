@@ -1,6 +1,23 @@
 table List2_Tasks
 	lineageTag: 5955e0c9-0f01-4c6d-b5b1-eb3350bd8d60
 
+	measure 'Total Budget' = SUM(List1_Projects[Budget (£)])
+		formatString: 0
+		lineageTag: 8b5a0d1b-0295-455e-a255-79cbb79bfe58
+
+	measure 'Total Hours Logged' = SUM(List2_Tasks[Hours Logged])
+		formatString: 0
+		lineageTag: 539f482f-ca14-400e-ba8d-82c229b87e14
+
+	measure 'In Progress Tasks' =
+			
+			CALCULATE(
+			    COUNTROWS(List2_Tasks),
+			    List2_Tasks[Status] = "In Progress"
+			)
+		formatString: 0
+		lineageTag: 19232d4f-f5e9-415d-b062-c0339ab23b25
+
 	column TaskID
 		dataType: string
 		lineageTag: b98c6012-a175-4157-b171-975e13a88689

@@ -1,6 +1,24 @@
 table List3_Issues
 	lineageTag: 8317a07f-1cf0-40b1-a3ee-2c2240078d5f
 
+	measure 'Resolved Issues' =
+			
+			CALCULATE(
+			    COUNTROWS(List3_Issues),
+			    List3_Issues[Resolved] = "Yes"
+			)
+		formatString: 0
+		lineageTag: 153a3859-b3c5-43f7-bb90-7110dd8175fb
+
+	measure 'Critical Issues' =
+			
+			CALCULATE(
+			    COUNTROWS(List3_Issues),
+			    List3_Issues[Severity] = "Critical"
+			)
+		formatString: 0
+		lineageTag: 3e11df57-73bc-4431-8ab5-d8d67c2f783f
+
 	column IssueID
 		dataType: string
 		lineageTag: 5d287c51-c910-4ab4-8405-37784253f0b4
