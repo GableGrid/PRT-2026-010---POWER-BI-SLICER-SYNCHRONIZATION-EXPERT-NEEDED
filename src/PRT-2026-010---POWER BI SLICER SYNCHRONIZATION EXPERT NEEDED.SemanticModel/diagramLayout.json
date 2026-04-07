@@ -4,14 +4,14 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 50,
+        "x": 0,
         "y": 0
       },
       "nodes": [
         {
           "location": {
-            "x": 334.18475118062975,
-            "y": -31.065109177342038
+            "x": 344.050083211302,
+            "y": 260.72663223919568
           },
           "nodeIndex": "List1_Projects",
           "nodeLineageTag": "8fea18f5-fe6a-454e-abfd-7f7a89e182e0",
@@ -23,8 +23,8 @@
         },
         {
           "location": {
-            "x": 618.36163941535983,
-            "y": -17.740116544906698
+            "x": 974.92292566680044,
+            "y": 139.52398157665067
           },
           "nodeIndex": "List2_Tasks",
           "nodeLineageTag": "5955e0c9-0f01-4c6d-b5b1-eb3350bd8d60",
@@ -49,7 +49,7 @@
         }
       ],
       "name": "All tables",
-      "zoomValue": 100,
+      "zoomValue": 70.95554390096882,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
