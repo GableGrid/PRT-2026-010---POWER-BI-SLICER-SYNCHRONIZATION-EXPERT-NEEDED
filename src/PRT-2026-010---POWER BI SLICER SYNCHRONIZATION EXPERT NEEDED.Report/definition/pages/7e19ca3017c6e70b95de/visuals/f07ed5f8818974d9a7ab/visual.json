@@ -7,7 +7,7 @@
     "z": 4000,
     "height": 82.409638554216869,
     "width": 203.85542168674698,
-    "tabOrder": 17
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "List1_Projects"
+                      "Entity": "List2_Tasks"
                     }
                   },
-                  "Property": "Department"
+                  "Property": "Assigned To"
                 }
               },
-              "queryRef": "List1_Projects.Department",
-              "nativeQueryRef": "Department",
+              "queryRef": "List2_Tasks.Assigned To",
+              "nativeQueryRef": "Assigned To",
               "active": true
             }
           ]
@@ -176,5 +176,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "3360b1dd096ac0eb2b04"
+  "parentGroupName": "f2dd4be7353941ebf578"
 }

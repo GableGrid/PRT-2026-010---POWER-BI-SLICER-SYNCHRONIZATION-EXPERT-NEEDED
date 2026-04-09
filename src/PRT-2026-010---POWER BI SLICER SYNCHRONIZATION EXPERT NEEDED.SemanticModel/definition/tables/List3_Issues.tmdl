@@ -19,6 +19,16 @@ table List3_Issues
 		formatString: 0
 		lineageTag: 3e11df57-73bc-4431-8ab5-d8d67c2f783f
 
+	measure 'Open Issues 2' = ```
+			
+			CALCULATE(
+			    COUNTROWS(List3_Issues),
+			    List3_Issues[Resolved] = "No"  
+			)
+			```
+		formatString: 0
+		lineageTag: cb96b740-8ed0-4619-ac12-e87311ec77a9
+
 	column IssueID
 		dataType: string
 		lineageTag: 5d287c51-c910-4ab4-8405-37784253f0b4

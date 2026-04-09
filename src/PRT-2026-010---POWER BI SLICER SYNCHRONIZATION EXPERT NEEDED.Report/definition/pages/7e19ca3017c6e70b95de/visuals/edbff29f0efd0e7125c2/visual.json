@@ -7,7 +7,7 @@
     "z": 2000,
     "height": 82.409638554216869,
     "width": 203.85542168674698,
-    "tabOrder": 8
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,18 +20,36 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "List1_Projects"
+                      "Entity": "List2_Tasks"
                     }
                   },
-                  "Property": "Region"
+                  "Property": "Due Date"
                 }
               },
-              "queryRef": "List1_Projects.Region",
-              "nativeQueryRef": "Region",
+              "queryRef": "List2_Tasks.Due Date",
+              "nativeQueryRef": "Due Date",
               "active": true
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "List2_Tasks"
+                  }
+                },
+                "Property": "Due Date"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
       }
     },
     "objects": {
@@ -124,6 +142,11 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {}
+        }
       ]
     },
     "visualContainerObjects": {
@@ -181,5 +204,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "3360b1dd096ac0eb2b04"
+  "parentGroupName": "f2dd4be7353941ebf578"
 }
