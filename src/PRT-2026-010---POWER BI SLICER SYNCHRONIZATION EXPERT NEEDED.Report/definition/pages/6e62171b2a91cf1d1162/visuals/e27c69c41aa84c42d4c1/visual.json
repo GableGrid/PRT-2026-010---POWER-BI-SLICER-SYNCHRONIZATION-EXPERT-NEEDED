@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
-  "name": "26442f054460825112ed",
+  "name": "e27c69c41aa84c42d4c1",
   "position": {
-    "x": 834.2168674698795,
-    "y": 0,
-    "z": 6,
-    "height": 33.253012048192772,
-    "width": 229.87951807228916,
-    "tabOrder": 1
+    "x": 1064.0963855421687,
+    "y": 86.746987951807228,
+    "z": 8,
+    "height": 76.626506024096386,
+    "width": 203.85542168674698,
+    "tabOrder": 12
   },
   "visual": {
     "visualType": "slicer",
@@ -23,11 +23,11 @@
                       "Entity": "List1_Projects"
                     }
                   },
-                  "Property": "Region"
+                  "Property": "Department"
                 }
               },
-              "queryRef": "List1_Projects.Region",
-              "nativeQueryRef": "Region",
+              "queryRef": "List1_Projects.Department",
+              "nativeQueryRef": "Department",
               "active": true
             }
           ]
@@ -74,6 +74,13 @@
                       "Percent": 0.4
                     }
                   }
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
                 }
               }
             }
@@ -173,7 +180,7 @@
       ]
     },
     "syncGroup": {
-      "groupName": "Region",
+      "groupName": "Department",
       "fieldChanges": true,
       "filterChanges": true
     },
