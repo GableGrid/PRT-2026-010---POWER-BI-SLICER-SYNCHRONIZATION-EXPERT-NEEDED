@@ -4,9 +4,10 @@
   "position": {
     "x": 12.167420538199892,
     "y": 7.1438695960311742,
-    "z": 9,
+    "z": 1000,
     "height": 75.010630758327409,
-    "width": 219.83908789520507
+    "width": 219.83908789520507,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "card",
@@ -106,23 +107,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "eba5b8720959eb06e7d8",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "b722d12dafb9e957ac08",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "List1_Projects"
-              }
-            },
-            "Property": "Open Issues"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "eba5b8720959eb06e7d8"
 }

@@ -6,7 +6,8 @@
     "y": 8.13830119203646,
     "z": 3000,
     "height": 255.54265742994443,
-    "width": 443.59334213012261
+    "width": 443.59334213012261,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "columnChart",
@@ -1302,42 +1303,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "cda6049a87fa0503c370",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "c755c331d62c36cb72a2",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "List1_Projects"
-              }
-            },
-            "Property": "Department"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "eb7116040a3afde0932a",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "List1_Projects"
-                  }
-                },
-                "Property": "Budget (£)"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "cda6049a87fa0503c370"
 }

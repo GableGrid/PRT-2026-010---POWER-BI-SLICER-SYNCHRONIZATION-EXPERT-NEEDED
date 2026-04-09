@@ -4,9 +4,10 @@
   "position": {
     "x": 12.071708282245419,
     "y": 7.1438695960311742,
-    "z": 10,
+    "z": 1000,
     "height": 75.010630758327409,
-    "width": 219.83908789520507
+    "width": 219.83908789520507,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "card",
@@ -154,23 +155,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "7b25d895300174a1cda6",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "6e0fa67222fd9cc5f87e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "List1_Projects"
-              }
-            },
-            "Property": "Total Tasks"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "7b25d895300174a1cda6"
 }

@@ -4,9 +4,10 @@
   "position": {
     "x": 10.480492027004116,
     "y": 7.1438695960311742,
-    "z": 8,
+    "z": 1000,
     "height": 75.010630758327409,
-    "width": 219.83908789520507
+    "width": 219.83908789520507,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "card",
@@ -173,23 +174,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "c59cadfce6083cbd096a",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "97d7027aa074563c1349",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "List1_Projects"
-              }
-            },
-            "Property": "Active Projects"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "c59cadfce6083cbd096a"
 }

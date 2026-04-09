@@ -4,9 +4,10 @@
   "position": {
     "x": 12.310988922131482,
     "y": 7.1438695960311742,
-    "z": 0,
+    "z": 1000,
     "height": 75.010630758327409,
-    "width": 219.83908789520507
+    "width": 219.83908789520507,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "card",
@@ -173,23 +174,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "15c49bc387dfe0046ab6",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "b43b6ac9c564fd3f3b19",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "List1_Projects"
-              }
-            },
-            "Property": "Total Projects"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "15c49bc387dfe0046ab6"
 }

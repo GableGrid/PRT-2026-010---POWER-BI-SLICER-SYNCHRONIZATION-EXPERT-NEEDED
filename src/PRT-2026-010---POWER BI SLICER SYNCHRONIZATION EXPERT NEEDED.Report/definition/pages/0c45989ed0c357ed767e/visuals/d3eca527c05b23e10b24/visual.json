@@ -6,7 +6,8 @@
     "y": 7.7452667814113738,
     "z": 3000,
     "height": 243.20137693631671,
-    "width": 564.47950073676009
+    "width": 564.47950073676009,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -1292,37 +1293,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "dd5a6d2be09595b8a862",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "8f6d30bfe6647a759061",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "List1_Projects"
-              }
-            },
-            "Property": "Region"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "3580b5a3e07ff04a86fb",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "List1_Projects"
-              }
-            },
-            "Property": "Total Projects"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "dd5a6d2be09595b8a862"
 }
