@@ -2,12 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "0c8d6c013df990bf3095",
   "position": {
-    "x": 8.431484383110643,
-    "y": 8.4656544169563634,
+    "x": 8.3901535773110822,
+    "y": 7.71868490957786,
     "z": 3000,
-    "height": 265.82154869242942,
-    "width": 484.20810314435386,
-    "tabOrder": 0
+    "height": 242.36670616074443,
+    "width": 481.83453401129339
   },
   "visual": {
     "visualType": "columnChart",
@@ -1303,5 +1302,42 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "334020ea6c0dcb1cddd6"
+  "parentGroupName": "334020ea6c0dcb1cddd6",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "569f03221ba48516f9d0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "List1_Projects"
+              }
+            },
+            "Property": "Department"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "085ffa0a1ee15ec593e1",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "List1_Projects"
+                  }
+                },
+                "Property": "Budget (£)"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
 }

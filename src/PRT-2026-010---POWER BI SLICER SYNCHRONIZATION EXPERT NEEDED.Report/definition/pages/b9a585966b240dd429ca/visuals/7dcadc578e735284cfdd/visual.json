@@ -4,13 +4,53 @@
   "position": {
     "x": 260.03408894651517,
     "y": 75.972812635368228,
-    "z": 1000,
+    "z": 3000,
     "height": 63.247274813539875,
     "width": 214.1898460895606,
-    "tabOrder": 12
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "List3_Issues"
+                    }
+                  },
+                  "Property": "Open Issues 2"
+                }
+              },
+              "queryRef": "List3_Issues.Open Issues 2",
+              "nativeQueryRef": "Open Issues 2"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "List3_Issues"
+                  }
+                },
+                "Property": "Open Issues 2"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
     "objects": {
       "labels": [
         {

@@ -176,5 +176,23 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "f2dd4be7353941ebf578"
+  "parentGroupName": "f2dd4be7353941ebf578",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "3c13d99573c29de2f78d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "List2_Tasks"
+              }
+            },
+            "Property": "Status"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
 }

@@ -20,35 +20,20 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "List2_Tasks"
+                      "Entity": "List1_Projects"
                     }
                   },
-                  "Property": "Due Date"
+                  "Property": "Region"
                 }
               },
-              "queryRef": "List2_Tasks.Due Date",
-              "nativeQueryRef": "Due Date",
+              "queryRef": "List1_Projects.Region",
+              "nativeQueryRef": "Region",
               "active": true
             }
           ]
         }
       },
       "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "List2_Tasks"
-                  }
-                },
-                "Property": "Due Date"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ],
         "isDefaultSort": true
       }
     },

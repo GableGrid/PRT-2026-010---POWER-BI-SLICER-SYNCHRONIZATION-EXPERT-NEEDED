@@ -20,14 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "List2_Tasks"
+                      "Entity": "List3_Issues"
                     }
                   },
-                  "Property": "In Progress Tasks"
+                  "Property": "Resolution Rate %"
                 }
               },
-              "queryRef": "List2_Tasks.In Progress Tasks",
-              "nativeQueryRef": "In Progress Tasks"
+              "queryRef": "List3_Issues.Resolution Rate %",
+              "nativeQueryRef": "Resolution Rate %"
             }
           ]
         }
@@ -39,10 +39,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "List2_Tasks"
+                    "Entity": "List3_Issues"
                   }
                 },
-                "Property": "In Progress Tasks"
+                "Property": "Resolution Rate %"
               }
             },
             "direction": "Descending"
@@ -174,23 +174,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "f9413daff3781724bd1d",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "7407ab497c9beb5f5dfe",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "List2_Tasks"
-              }
-            },
-            "Property": "In Progress Tasks"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "f9413daff3781724bd1d"
 }

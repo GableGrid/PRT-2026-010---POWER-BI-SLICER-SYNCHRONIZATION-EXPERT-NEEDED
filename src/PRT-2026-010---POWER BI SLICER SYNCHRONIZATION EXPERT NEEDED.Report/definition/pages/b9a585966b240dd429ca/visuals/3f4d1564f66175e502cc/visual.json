@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "List2_Tasks"
+                      "Entity": "List3_Issues"
                     }
                   },
-                  "Property": "Status"
+                  "Property": "Resolved"
                 }
               },
-              "queryRef": "List2_Tasks.Status",
-              "nativeQueryRef": "Status",
+              "queryRef": "List3_Issues.Resolved",
+              "nativeQueryRef": "Resolved",
               "active": true
             }
           ]
@@ -123,6 +123,11 @@
               }
             }
           }
+        }
+      ],
+      "general": [
+        {
+          "properties": {}
         }
       ]
     },

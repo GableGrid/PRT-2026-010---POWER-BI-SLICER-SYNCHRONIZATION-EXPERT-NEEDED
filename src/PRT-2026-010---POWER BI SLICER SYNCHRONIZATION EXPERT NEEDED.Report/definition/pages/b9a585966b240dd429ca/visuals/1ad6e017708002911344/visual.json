@@ -4,13 +4,53 @@
   "position": {
     "x": 520.73490813648289,
     "y": 75.590551181102356,
-    "z": 1000,
+    "z": 2000,
     "height": 63.832020997375324,
     "width": 213.33333333333331,
-    "tabOrder": 3001
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "List3_Issues"
+                    }
+                  },
+                  "Property": "Resolved Issues"
+                }
+              },
+              "queryRef": "List3_Issues.Resolved Issues",
+              "nativeQueryRef": "Resolved Issues"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "List3_Issues"
+                  }
+                },
+                "Property": "Resolved Issues"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
     "objects": {
       "labels": [
         {

@@ -181,5 +181,23 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "8865f1e062a78c22c013"
+  "parentGroupName": "8865f1e062a78c22c013",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "a6989193754682b7ac09",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "List1_Projects"
+              }
+            },
+            "Property": "Department"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
 }

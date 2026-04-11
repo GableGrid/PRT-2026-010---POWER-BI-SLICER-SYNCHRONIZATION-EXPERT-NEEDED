@@ -20,35 +20,20 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "List2_Tasks"
+                      "Entity": "List1_Projects"
                     }
                   },
-                  "Property": "Due Date"
+                  "Property": "Region"
                 }
               },
-              "queryRef": "List2_Tasks.Due Date",
-              "nativeQueryRef": "Due Date",
+              "queryRef": "List1_Projects.Region",
+              "nativeQueryRef": "Region",
               "active": true
             }
           ]
         }
       },
       "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "List2_Tasks"
-                  }
-                },
-                "Property": "Due Date"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ],
         "isDefaultSort": true
       }
     },
@@ -204,5 +189,23 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "8865f1e062a78c22c013"
+  "parentGroupName": "8865f1e062a78c22c013",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "00930f767b060e1f8271",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "List1_Projects"
+              }
+            },
+            "Property": "Region"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
 }

@@ -29,6 +29,18 @@ table List3_Issues
 		formatString: 0
 		lineageTag: cb96b740-8ed0-4619-ac12-e87311ec77a9
 
+	measure 'Resolution Rate %' =
+			
+			FORMAT(
+			    DIVIDE(
+			        CALCULATE(COUNTROWS(List3_Issues), List3_Issues[Resolved] = "Yes"),
+			        COUNTROWS(List3_Issues),
+			        0
+			    ) * 100,
+			    "0"
+			) & "%"
+		lineageTag: 2e901404-b5ac-440c-ac5d-627693bf27ab
+
 	column IssueID
 		dataType: string
 		lineageTag: 5d287c51-c910-4ab4-8405-37784253f0b4

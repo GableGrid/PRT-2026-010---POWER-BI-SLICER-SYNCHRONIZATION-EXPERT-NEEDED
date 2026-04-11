@@ -1,12 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
-  "name": "3d39e8a4d313c591f135",
+  "name": "92776ce776612241fbd4",
   "position": {
     "x": 0,
     "y": 0,
     "z": 6000,
     "height": 275.9796201945345,
-    "width": 658.44175895125375
+    "width": 1002.4775780032838,
+    "tabOrder": 3006
   },
   "visual": {
     "visualType": "tableEx",
@@ -19,76 +20,95 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "List1_Projects"
+                      "Entity": "List3_Issues"
                     }
                   },
-                  "Property": "Region"
+                  "Property": "Issue Title"
                 }
               },
-              "queryRef": "List1_Projects.Region",
-              "nativeQueryRef": "Region"
+              "queryRef": "List3_Issues.Issue Title",
+              "nativeQueryRef": "Issue Title"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "List1_Projects"
+                      "Entity": "List3_Issues"
                     }
                   },
-                  "Property": "Department"
+                  "Property": "ProjectID"
                 }
               },
-              "queryRef": "List1_Projects.Department",
-              "nativeQueryRef": "Department"
+              "queryRef": "List3_Issues.ProjectID",
+              "nativeQueryRef": "ProjectID"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "List1_Projects"
+                      "Entity": "List3_Issues"
                     }
                   },
-                  "Property": "Project Name"
+                  "Property": "Severity"
                 }
               },
-              "queryRef": "List1_Projects.Project Name",
-              "nativeQueryRef": "Project Name"
+              "queryRef": "List3_Issues.Severity",
+              "nativeQueryRef": "Severity"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "List1_Projects"
+                      "Entity": "List3_Issues"
                     }
                   },
-                  "Property": "Status"
+                  "Property": "Reported By"
                 }
               },
-              "queryRef": "List1_Projects.Status",
-              "nativeQueryRef": "Status"
+              "queryRef": "List3_Issues.Reported By",
+              "nativeQueryRef": "Reported By"
             },
             {
               "field": {
-                "Aggregation": {
+                "HierarchyLevel": {
                   "Expression": {
-                    "Column": {
+                    "Hierarchy": {
                       "Expression": {
-                        "SourceRef": {
-                          "Entity": "List1_Projects"
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "List3_Issues"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "Date Reported"
                         }
                       },
-                      "Property": "Budget (£)"
+                      "Hierarchy": "Date Hierarchy"
                     }
                   },
-                  "Function": 0
+                  "Level": "Month"
                 }
               },
-              "queryRef": "Sum(List1_Projects.Budget (£))",
-              "nativeQueryRef": "Budget (£)",
-              "displayName": "Budget (£)"
+              "queryRef": "List3_Issues.Date Reported.Variation.Date Hierarchy.Month",
+              "nativeQueryRef": "Date Reported Month"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "List3_Issues"
+                    }
+                  },
+                  "Property": "Resolved"
+                }
+              },
+              "queryRef": "List3_Issues.Resolved",
+              "nativeQueryRef": "Resolved"
             }
           ]
         }
@@ -100,13 +120,13 @@
               "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "List1_Projects"
+                    "Entity": "List3_Issues"
                   }
                 },
-                "Property": "Status"
+                "Property": "ProjectID"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ]
       }
@@ -376,13 +396,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "131.2013648506481D"
+                  "Value": "234.38251405371307D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "List1_Projects.Department"
+            "metadata": "List3_Issues.Issue Title"
           }
         },
         {
@@ -390,13 +410,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "118.88425202007404D"
+                  "Value": "173.58095568112046D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "List1_Projects.Region"
+            "metadata": "List3_Issues.ProjectID"
           }
         },
         {
@@ -404,13 +424,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "196.23074775354794D"
+                  "Value": "164.5780392235631D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "List1_Projects.Project Name"
+            "metadata": "List3_Issues.Severity"
           }
         },
         {
@@ -418,13 +438,41 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "91.4813462388195D"
+                  "Value": "183.59407381421D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "List1_Projects.Status"
+            "metadata": "List3_Issues.Reported By"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "127.79885853525717D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "List3_Issues.Date Reported.Variation.Date Hierarchy.Month"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "94.43833041576323D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "List3_Issues.Resolved"
           }
         }
       ],
@@ -480,6 +528,41 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Issue detail '"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
                 }
               }
             }
@@ -609,5 +692,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "41f6f3d6adaa09683027"
+  "parentGroupName": "06018aef6d8576d37606"
 }

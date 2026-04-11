@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "List2_Tasks"
+                      "Entity": "List3_Issues"
                     }
                   },
-                  "Property": "Assigned To"
+                  "Property": "Severity"
                 }
               },
-              "queryRef": "List2_Tasks.Assigned To",
-              "nativeQueryRef": "Assigned To",
+              "queryRef": "List3_Issues.Severity",
+              "nativeQueryRef": "Severity",
               "active": true
             }
           ]
@@ -123,6 +123,11 @@
               }
             }
           }
+        }
+      ],
+      "general": [
+        {
+          "properties": {}
         }
       ]
     },

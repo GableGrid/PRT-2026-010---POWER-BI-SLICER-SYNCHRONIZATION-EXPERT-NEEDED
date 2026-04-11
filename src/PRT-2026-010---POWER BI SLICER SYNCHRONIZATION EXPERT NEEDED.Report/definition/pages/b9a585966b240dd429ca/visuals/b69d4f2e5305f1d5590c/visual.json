@@ -11,6 +11,79 @@
   },
   "visual": {
     "visualType": "donutChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "List3_Issues"
+                    }
+                  },
+                  "Property": "Severity"
+                }
+              },
+              "queryRef": "List3_Issues.Severity",
+              "nativeQueryRef": "Severity",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "List3_Issues"
+                    }
+                  },
+                  "Property": "Critical Issues"
+                }
+              },
+              "queryRef": "List3_Issues.Critical Issues",
+              "nativeQueryRef": "Critical Issues"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "List3_Issues"
+                    }
+                  },
+                  "Property": "Open Issues 2"
+                }
+              },
+              "queryRef": "List3_Issues.Open Issues 2",
+              "nativeQueryRef": "Open Issues 2"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "List3_Issues"
+                  }
+                },
+                "Property": "Critical Issues"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
     "objects": {
       "dataPoint": [
         {
@@ -186,7 +259,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Projects by Status'"
+                  "Value": "'Issues by Severity'"
                 }
               }
             }

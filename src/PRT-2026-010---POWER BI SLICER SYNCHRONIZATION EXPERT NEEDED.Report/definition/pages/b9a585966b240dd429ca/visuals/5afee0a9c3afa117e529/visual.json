@@ -20,14 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "List1_Projects"
+                      "Entity": "List3_Issues"
                     }
                   },
-                  "Property": "Total Projects"
+                  "Property": "Critical Issues"
                 }
               },
-              "queryRef": "List1_Projects.Total Projects",
-              "nativeQueryRef": "Total Projects"
+              "queryRef": "List3_Issues.Critical Issues",
+              "nativeQueryRef": "Critical Issues"
             }
           ]
         }
@@ -39,10 +39,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "List1_Projects"
+                    "Entity": "List3_Issues"
                   }
                 },
-                "Property": "Total Projects"
+                "Property": "Critical Issues"
               }
             },
             "direction": "Descending"
