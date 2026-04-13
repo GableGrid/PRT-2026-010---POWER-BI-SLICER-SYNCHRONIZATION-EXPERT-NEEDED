@@ -23,11 +23,11 @@
                       "Entity": "List1_Projects"
                     }
                   },
-                  "Property": "Region"
+                  "Property": "Department"
                 }
               },
-              "queryRef": "List1_Projects.Region",
-              "nativeQueryRef": "Region",
+              "queryRef": "List1_Projects.Department",
+              "nativeQueryRef": "Department",
               "active": true
             }
           ]
@@ -178,5 +178,23 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "c087a00add0c900e04e9"
+  "parentGroupName": "c087a00add0c900e04e9",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "278b3600b140c6aa7bcd",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "List1_Projects"
+              }
+            },
+            "Property": "Department"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
 }

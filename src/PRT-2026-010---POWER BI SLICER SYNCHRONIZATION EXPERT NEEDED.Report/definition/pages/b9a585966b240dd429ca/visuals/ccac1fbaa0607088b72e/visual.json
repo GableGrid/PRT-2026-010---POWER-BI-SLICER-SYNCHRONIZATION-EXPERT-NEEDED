@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "List1_Projects"
+                      "Entity": "List3_Issues"
                     }
                   },
-                  "Property": "Status"
+                  "Property": "Severity"
                 }
               },
-              "queryRef": "List1_Projects.Status",
-              "nativeQueryRef": "Status",
+              "queryRef": "List3_Issues.Severity",
+              "nativeQueryRef": "Severity",
               "active": true
             }
           ]
@@ -178,5 +178,23 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "cf33bca1dda093494cd0"
+  "parentGroupName": "cf33bca1dda093494cd0",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "694239d34b12ae506c25",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "List3_Issues"
+              }
+            },
+            "Property": "Severity"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
 }

@@ -174,23 +174,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "402ab391b36343cd588b",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "02f181cb00c556900810",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "List2_Tasks"
-              }
-            },
-            "Property": "Total Hours Logged"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "402ab391b36343cd588b"
 }

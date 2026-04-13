@@ -107,23 +107,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "31da70d7cf059a2c0304",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "15b970066514746ea0a4",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "List1_Projects"
-              }
-            },
-            "Property": "Open Issues"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "31da70d7cf059a2c0304"
 }

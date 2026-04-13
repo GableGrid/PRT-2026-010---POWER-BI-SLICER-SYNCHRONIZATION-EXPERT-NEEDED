@@ -155,23 +155,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "7dc23a31f465148948d8",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "791d3d70450d937d12ad",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "List1_Projects"
-              }
-            },
-            "Property": "Total Tasks"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "7dc23a31f465148948d8"
 }

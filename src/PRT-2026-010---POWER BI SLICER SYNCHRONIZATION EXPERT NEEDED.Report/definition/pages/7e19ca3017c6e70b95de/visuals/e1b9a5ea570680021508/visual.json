@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "List1_Projects"
+                      "Entity": "List2_Tasks"
                     }
                   },
-                  "Property": "Region"
+                  "Property": "Task Name"
                 }
               },
-              "queryRef": "List1_Projects.Region",
-              "nativeQueryRef": "Region",
+              "queryRef": "List2_Tasks.Task Name",
+              "nativeQueryRef": "Task Name",
               "active": true
             }
           ]
@@ -126,6 +126,11 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {}
+        }
       ]
     },
     "visualContainerObjects": {
@@ -178,5 +183,23 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "73837786609187d3be0e"
+  "parentGroupName": "73837786609187d3be0e",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "4f33c1d7431933abd658",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "List2_Tasks"
+              }
+            },
+            "Property": "Task Name"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
 }

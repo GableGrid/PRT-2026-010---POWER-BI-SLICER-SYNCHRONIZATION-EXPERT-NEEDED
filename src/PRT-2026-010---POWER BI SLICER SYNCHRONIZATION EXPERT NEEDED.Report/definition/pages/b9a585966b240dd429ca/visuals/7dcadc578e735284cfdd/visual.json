@@ -4,7 +4,7 @@
   "position": {
     "x": 260.03408894651517,
     "y": 75.972812635368228,
-    "z": 4000,
+    "z": 5000,
     "height": 63.247274813539875,
     "width": 214.1898460895606,
     "tabOrder": 1000
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "List3_Issues.Open Issues 2",
-              "nativeQueryRef": "Open Issues 2"
+              "nativeQueryRef": "Open Issues ",
+              "displayName": "Open Issues "
             }
           ]
         }
@@ -177,7 +178,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "077ee960013cab82218c",
+        "name": "ea020a45725b909d049d",
         "field": {
           "Measure": {
             "Expression": {

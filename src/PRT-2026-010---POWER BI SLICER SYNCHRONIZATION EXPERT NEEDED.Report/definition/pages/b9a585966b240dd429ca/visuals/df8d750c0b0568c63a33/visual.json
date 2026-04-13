@@ -20,20 +20,35 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "List1_Projects"
+                      "Entity": "List3_Issues"
                     }
                   },
-                  "Property": "Region"
+                  "Property": "Resolution Date"
                 }
               },
-              "queryRef": "List1_Projects.Region",
-              "nativeQueryRef": "Region",
+              "queryRef": "List3_Issues.Resolution Date",
+              "nativeQueryRef": "Resolution Date",
               "active": true
             }
           ]
         }
       },
       "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "List3_Issues"
+                  }
+                },
+                "Property": "Resolution Date"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
         "isDefaultSort": true
       }
     },
@@ -126,6 +141,11 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {}
+        }
       ]
     },
     "visualContainerObjects": {
@@ -178,5 +198,23 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "cf33bca1dda093494cd0"
+  "parentGroupName": "cf33bca1dda093494cd0",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "cf42ad15d0a4c6db47a8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "List3_Issues"
+              }
+            },
+            "Property": "Resolution Date"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
 }

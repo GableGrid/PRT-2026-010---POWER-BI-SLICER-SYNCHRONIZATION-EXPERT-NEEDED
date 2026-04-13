@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "List1_Projects"
+                      "Entity": "List2_Tasks"
                     }
                   },
                   "Property": "Status"
                 }
               },
-              "queryRef": "List1_Projects.Status",
+              "queryRef": "List2_Tasks.Status",
               "nativeQueryRef": "Status",
               "active": true
             }
@@ -178,5 +178,23 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "73837786609187d3be0e"
+  "parentGroupName": "73837786609187d3be0e",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "df920d93dbc91ace1870",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "List2_Tasks"
+              }
+            },
+            "Property": "Status"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
 }

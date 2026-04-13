@@ -107,23 +107,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "0cb056cb271b05b249b2",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "13709525046b54a3730d",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "List2_Tasks"
-              }
-            },
-            "Property": "In Progress Tasks"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "0cb056cb271b05b249b2"
 }

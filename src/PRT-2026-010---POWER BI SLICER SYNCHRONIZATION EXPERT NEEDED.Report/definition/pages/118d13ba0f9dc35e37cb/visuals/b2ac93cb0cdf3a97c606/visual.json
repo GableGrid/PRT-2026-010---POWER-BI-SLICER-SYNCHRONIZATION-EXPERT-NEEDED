@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "List1_Projects"
+                      "Entity": "List3_Issues"
                     }
                   },
-                  "Property": "Region"
+                  "Property": "Resolved"
                 }
               },
-              "queryRef": "List1_Projects.Region",
-              "nativeQueryRef": "Region",
+              "queryRef": "List3_Issues.Resolved",
+              "nativeQueryRef": "Resolved",
               "active": true
             }
           ]
