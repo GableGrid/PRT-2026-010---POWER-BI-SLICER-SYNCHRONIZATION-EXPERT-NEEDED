@@ -173,5 +173,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "077ee960013cab82218c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "List3_Issues"
+              }
+            },
+            "Property": "Open Issues 2"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

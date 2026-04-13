@@ -173,5 +173,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "5cad1305ac67bb8a7e07",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "List1_Projects"
+              }
+            },
+            "Property": "Total Projects"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

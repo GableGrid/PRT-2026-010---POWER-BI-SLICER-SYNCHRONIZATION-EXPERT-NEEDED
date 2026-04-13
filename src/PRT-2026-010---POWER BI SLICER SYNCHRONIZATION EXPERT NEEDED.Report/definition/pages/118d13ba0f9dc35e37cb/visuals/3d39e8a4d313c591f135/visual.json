@@ -512,10 +512,34 @@
                   "Value": "false"
                 }
               }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "null"
+                    }
+                  }
+                }
+              }
             }
           },
           "selector": {
             "metadata": "List1_Projects.Status"
+          }
+        }
+      ],
+      "accessibility": [
+        {
+          "properties": {
+            "rowWithReferenceText": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
+                }
+              }
+            }
           }
         }
       ]
@@ -661,7 +685,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "11c850742552ae2373dc",
+        "name": "4198fede79ac14e3e244",
         "field": {
           "Column": {
             "Expression": {
@@ -675,7 +699,7 @@
         "type": "Categorical"
       },
       {
-        "name": "a005c0703c04705ec670",
+        "name": "426f291d6ed9a7820775",
         "field": {
           "Column": {
             "Expression": {
@@ -689,7 +713,7 @@
         "type": "Categorical"
       },
       {
-        "name": "15af0de09c5912ba16d5",
+        "name": "6adacfd10cebbe840402",
         "field": {
           "Column": {
             "Expression": {
@@ -703,7 +727,7 @@
         "type": "Categorical"
       },
       {
-        "name": "f30f95573d29ee9c9199",
+        "name": "4594d74d4926899bcb04",
         "field": {
           "Column": {
             "Expression": {
@@ -717,7 +741,7 @@
         "type": "Categorical"
       },
       {
-        "name": "21c0486a950dcb566d99",
+        "name": "43c38d0e9d100c438a47",
         "field": {
           "Aggregation": {
             "Expression": {

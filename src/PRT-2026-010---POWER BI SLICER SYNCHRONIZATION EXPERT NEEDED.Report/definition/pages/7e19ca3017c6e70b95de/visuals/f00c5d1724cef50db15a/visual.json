@@ -155,5 +155,23 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "a3556c3ee3cbc721b68b"
+  "parentGroupName": "a3556c3ee3cbc721b68b",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "d09af7e9996e4a02dca7",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "List1_Projects"
+              }
+            },
+            "Property": "Total Projects"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
 }

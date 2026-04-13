@@ -174,5 +174,23 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "457e807ad8adde59b582"
+  "parentGroupName": "457e807ad8adde59b582",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "858fcdd35e86e06b0adc",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "List3_Issues"
+              }
+            },
+            "Property": "Critical Issues"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
 }

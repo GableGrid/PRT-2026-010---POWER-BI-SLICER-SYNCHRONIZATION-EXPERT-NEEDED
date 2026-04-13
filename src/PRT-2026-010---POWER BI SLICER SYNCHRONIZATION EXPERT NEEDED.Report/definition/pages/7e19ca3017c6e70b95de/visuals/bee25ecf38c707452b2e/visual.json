@@ -174,5 +174,23 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "2ec2a1973baf0a62bbbc"
+  "parentGroupName": "2ec2a1973baf0a62bbbc",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "8d4aa785241c22d76a00",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "List2_Tasks"
+              }
+            },
+            "Property": "Total Budget"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
 }
