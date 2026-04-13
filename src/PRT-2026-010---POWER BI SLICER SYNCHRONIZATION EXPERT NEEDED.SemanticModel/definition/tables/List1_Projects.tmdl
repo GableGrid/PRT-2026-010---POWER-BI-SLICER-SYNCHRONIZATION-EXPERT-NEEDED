@@ -93,12 +93,14 @@ table List1_Projects
 
 	column 'Budget (£)'
 		dataType: int64
-		formatString: 0
+		formatString: "£"#,0;-"£"#,0;"£"#,0
 		lineageTag: 3b6887fc-ad86-49f3-ad21-478a2c494df2
 		summarizeBy: sum
 		sourceColumn: Budget (£)
 
 		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
 
 	column Region
 		dataType: string

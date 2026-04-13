@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "b2ac93cb0cdf3a97c606",
   "position": {
-    "x": 14.457831325301205,
-    "y": 349.87951807228916,
-    "z": 2000,
-    "height": 82.409638554216869,
-    "width": 203.85542168674698,
+    "x": 8.123201467286469,
+    "y": 83.479745754672223,
+    "z": 5000,
+    "height": 72.230971128608928,
+    "width": 216.69291338582676,
     "tabOrder": 1000
   },
   "visual": {
@@ -64,14 +64,14 @@
             "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
                 }
               }
             },
             "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "11D"
+                  "Value": "13D"
                 }
               }
             },
@@ -79,9 +79,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0.4
+                    "Literal": {
+                      "Value": "'#585858'"
                     }
                   }
                 }
@@ -189,23 +188,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "8865f1e062a78c22c013",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "00930f767b060e1f8271",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "List1_Projects"
-              }
-            },
-            "Property": "Region"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
-  }
+  "parentGroupName": "c087a00add0c900e04e9"
 }

@@ -6,7 +6,8 @@
     "y": 7.7490313710786305,
     "z": 3000,
     "height": 243.31958505186853,
-    "width": 493.90660699786645
+    "width": 493.90660699786645,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -76,7 +77,7 @@
             "innerPadding": {
               "expr": {
                 "Literal": {
-                  "Value": "17L"
+                  "Value": "25L"
                 }
               }
             },

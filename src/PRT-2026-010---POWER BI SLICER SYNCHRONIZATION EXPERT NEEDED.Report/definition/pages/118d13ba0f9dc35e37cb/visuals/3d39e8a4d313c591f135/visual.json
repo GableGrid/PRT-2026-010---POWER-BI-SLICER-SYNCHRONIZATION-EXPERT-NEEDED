@@ -6,7 +6,8 @@
     "y": 0,
     "z": 6000,
     "height": 275.9796201945345,
-    "width": 658.44175895125375
+    "width": 658.44175895125375,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "tableEx",
@@ -227,6 +228,32 @@
                 }
               }
             }
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "List1_Projects.Status"
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "List1_Projects.Status"
           }
         }
       ],
@@ -469,6 +496,27 @@
           "selector": {
             "metadata": "Sum(Female Dormitories in Budapest.Price)"
           }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "List1_Projects.Status"
+          }
         }
       ]
     },
@@ -609,5 +657,84 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "41f6f3d6adaa09683027"
+  "parentGroupName": "41f6f3d6adaa09683027",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "11c850742552ae2373dc",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "List1_Projects"
+              }
+            },
+            "Property": "Region"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a005c0703c04705ec670",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "List1_Projects"
+              }
+            },
+            "Property": "Department"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "15af0de09c5912ba16d5",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "List1_Projects"
+              }
+            },
+            "Property": "Project Name"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "f30f95573d29ee9c9199",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "List1_Projects"
+              }
+            },
+            "Property": "Status"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "21c0486a950dcb566d99",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "List1_Projects"
+                  }
+                },
+                "Property": "Budget (£)"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
 }
